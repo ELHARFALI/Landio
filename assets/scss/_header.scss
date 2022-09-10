@@ -1,0 +1,57 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    padding-block: 20px;
+    box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.05);
+    height: 65px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    z-index: 4;
+
+    &.active {
+        height: 330px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .menu-toggle-btn {
+            font-size: 25px;
+        }
+
+        .navbar {
+            position: absolute;
+            width: 100%;
+            top: 64px;
+            left: 0;
+            padding-inline: 30px;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5 ease-in-out;
+
+            &__link, .header__action-link {
+                color: $cool-gray;
+                font-size: $fs-6;
+                font-family: $ff-mulish;
+                padding-block: 8px;
+            }
+        }
+
+        :is(.navbar__link, .header__action-link):is(:hover, :focus) {
+            color: $majorelle-blue;
+        }
+    }
+
+    &.active {
+
+        .navbar {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

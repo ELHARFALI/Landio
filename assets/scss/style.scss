@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'header';
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, img, span, input, label, button, ion-icon, textarea {
+    display: block;
+}
+
+button {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+input, textarea {
+    font: inherit;
+    width: 100%;
+    border: none;
+}
+
+.container {
+    padding-inline: 15px;
+}
+
+html {
+    font-family: $ff-quicksand;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white;
+}

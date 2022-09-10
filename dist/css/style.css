@@ -1,0 +1,91 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsl(0deg, 0%, 100%);
+  padding-block: 20px;
+  box-shadow: 0 1px 2px hsla(0deg, 0%, 0%, 0.05);
+  height: 65px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  z-index: 4;
+}
+.header.active {
+  height: 330px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .menu-toggle-btn {
+  font-size: 25px;
+}
+.header .container .navbar {
+  position: absolute;
+  width: 100%;
+  top: 64px;
+  left: 0;
+  padding-inline: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5 ease-in-out;
+}
+.header .container .navbar__link, .header .container .navbar .header__action-link {
+  color: hsl(244deg, 17%, 61%);
+  font-size: 15px;
+  font-family: "Mulish", sans-serif;
+  padding-block: 8px;
+}
+.header .container :is(.navbar__link, .header__action-link):is(:hover, :focus) {
+  color: hsl(245deg, 67%, 59%);
+}
+.header.active .navbar {
+  visibility: visible;
+  opacity: 1;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, img, span, input, label, button, ion-icon, textarea {
+  display: block;
+}
+
+button {
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+input, textarea {
+  font: inherit;
+  width: 100%;
+  border: none;
+}
+
+.container {
+  padding-inline: 15px;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 100%);
+}/*# sourceMappingURL=style.css.map */
