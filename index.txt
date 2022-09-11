@@ -19,15 +19,13 @@ alt = Landio logo
 
 # HERO
 
-Creative Landing Page
 
-A creative & modern landing page with Landio template & We love make things amazing.
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur that is fugit.
+
 
 placeholder = Enter Your Email
 
-Subscribe
+
 
 alt = Hero image
 

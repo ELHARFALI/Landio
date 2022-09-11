@@ -46,6 +46,36 @@
   opacity: 1;
 }
 
+.hero {
+  padding: 125px 0 80px;
+  background-color: hsl(240deg, 100%, 99%);
+}
+.hero .container .hero__content {
+  margin-bottom: 80px;
+}
+.hero .container .hero__content .hero__title {
+  margin-bottom: 25px;
+}
+.hero .container .hero__content .hero__text {
+  color: hsl(244deg, 17%, 61%);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.hero .container .hero__content .form__text {
+  color: hsl(245deg, 17%, 27%);
+  font-weight: 500;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.hero .container .hero__content .email__field {
+  background-color: hsl(228deg, 50%, 96%);
+  padding: 17px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -79,6 +109,24 @@ input, textarea {
 
 .container {
   padding-inline: 15px;
+}
+
+.h1, .h2, .h3 {
+  color: hsl(245deg, 17%, 27%);
+  font-family: "Mulish", sans-serif;
+  line-height: 1.2z;
+}
+
+.h1 {
+  font-size: 36px;
+}
+
+.h2 {
+  font-size: 28px;
+}
+
+.h3 {
+  font-size: 20px;
 }
 
 html {

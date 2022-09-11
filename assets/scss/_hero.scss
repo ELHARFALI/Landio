@@ -1,0 +1,38 @@
+
+.hero {
+    padding: 125px 0 $section-padding;
+    background-color: $ghost-white-1;
+
+    .container {
+
+        .hero__content {
+            margin-bottom: 80px;
+
+            .hero__title {
+                margin-bottom: 25px;
+            }
+
+            .hero__text {
+                color: $cool-gray;
+                font-size: $fs-4;
+                font-weight: $fw-500;
+                line-height: 1.8;
+                margin-bottom: 40px;
+            }
+
+            .form__text {
+                color: $independence;
+                font-weight: $fw-500;
+                line-height: 1.8;
+                margin-bottom: 20px;
+            }
+
+            .email__field {
+                background-color: $ghost-white-2;
+                padding: 17px 20px;
+                border-radius: 8px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
