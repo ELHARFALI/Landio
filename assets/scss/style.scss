@@ -1,6 +1,8 @@
 @import 'variables';
+@import 'mixins';
 @import 'header';
 @import 'hero';
+@import 'features';
 
 *, *::before, *::after {
     margin: 0;
@@ -67,6 +69,14 @@ body {
     font-weight: $fw-600;
     border-radius: 20px 0 20px 0;
     transition: $transition;
+
+    @include large-tablet {
+        padding: 8px 16px;
+    }
+
+    @include mobile {
+        font-size: $fs-4;
+    }
 
     &:hover {
         background-color: $majorelle-blue;

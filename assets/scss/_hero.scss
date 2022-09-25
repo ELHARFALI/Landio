@@ -3,7 +3,6 @@
     padding: 125px 0 $section-padding;
     background-color: $ghost-white-1;
     width: 100%;
-    height: calc(100vh - 65px);
     
 
     .container {
@@ -13,6 +12,11 @@
         gap: 30px;
         width: 90%;
         margin: 0 auto;
+
+        @include large-tablet {
+            display: flex;
+            flex-direction: column;
+        }
         
 
         .hero__content {
@@ -24,6 +28,13 @@
                 color: $majorelle-blue;
                 font-size: $fs-1;
                 font-weight: $fw-700;
+
+            @include large {
+                font-size: $fs-2;
+            }
+
+            
+
             }
 
             .hero__text {
@@ -32,6 +43,11 @@
                 font-weight: $fw-500;
                 line-height: 1.8;
                 margin-bottom: 40px;
+
+                @include large {
+                    font-size: $fs-6;
+                    margin-bottom: 25px;
+                }
             }
 
             .form__text {
@@ -39,6 +55,11 @@
                 font-weight: $fw-500;
                 line-height: 1.8;
                 margin-bottom: 20px;
+
+                @include large {
+                    line-height: 1.6;
+                    font-size: $fs-3;
+                }
             }
 
 
@@ -47,6 +68,15 @@
                 padding: 17px 20px;
                 border-radius: 8px;
                 margin-bottom: 40px;
+
+                @include large {
+                    padding: 15px 18px;
+                    margin-bottom: 30px;
+                }
+
+                @include mobile {
+                    padding: 13px 16px;
+                }
             }
 
 
