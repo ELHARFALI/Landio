@@ -49,16 +49,30 @@
 .hero {
   padding: 125px 0 80px;
   background-color: hsl(240deg, 100%, 99%);
+  width: 100%;
+  height: calc(100vh - 65px);
+}
+.hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
 }
 .hero .container .hero__content {
   margin-bottom: 80px;
+  width: 100%;
 }
 .hero .container .hero__content .hero__title {
   margin-bottom: 25px;
+  color: hsl(245deg, 67%, 59%);
+  font-size: 36px;
+  font-weight: 700;
 }
 .hero .container .hero__content .hero__text {
   color: hsl(244deg, 17%, 61%);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.8;
   margin-bottom: 40px;
@@ -73,7 +87,19 @@
   background-color: hsl(228deg, 50%, 96%);
   padding: 17px 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+.hero .container .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .container .image .hero__banner {
+  width: 70%;
+}
+.hero .container .image .hero__banner img {
+  max-width: 100%;
 }
 
 *, *::before, *::after {
@@ -136,4 +162,18 @@ html {
 
 body {
   background-color: hsl(0deg, 0%, 100%);
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: hsl(211deg, 100%, 35%);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px 0 20px 0;
+  transition: 0.25s ease;
+}
+.btn-primary:hover {
+  background-color: hsl(245deg, 67%, 59%);
+  color: hsl(244deg, 17%, 19%);
 }/*# sourceMappingURL=style.css.map */
