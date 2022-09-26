@@ -145,7 +145,7 @@
 .features .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 50px;
 }
 @media (max-width: 991px) {
   .features .container {
@@ -158,16 +158,27 @@
   }
 }
 .features .container .cards {
-  width: 100%;
+  position: relative;
+  padding-left: 15px;
+  padding-bottom: 20px;
+  max-width: 440px;
+  box-shadow: 6px 8px 16px -5px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 6px 8px 16px -5px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 6px 8px 16px -5px rgba(0, 0, 0, 0.45);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+.features .container .cards:hover {
+  transform: scale(1.0325);
 }
 .features .container .img {
   width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .features .container .img img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 *, *::before, *::after {
