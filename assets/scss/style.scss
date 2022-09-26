@@ -3,6 +3,8 @@
 @import 'header';
 @import 'hero';
 @import 'features';
+@import 'blog';
+@import 'footer';
 
 *, *::before, *::after {
     margin: 0;
@@ -81,5 +83,31 @@ body {
     &:hover {
         background-color: $majorelle-blue;
         color: $raisin-black-1;
+    }
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 70px;
+    color: $white;
+    font-weight: 800;
+    background-color: $sapphire;
+    width: fit-content;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 30px;
+    border-radius: 20px 0 20px 0;
+    transition: $transition;
+    cursor: pointer;
+
+    &:hover {
+        color: $sapphire;
+        background-color: #F2F3F4;
+        box-shadow: -6px 5px 46px 7px rgba(0,86,179,0.76);
+        -webkit-box-shadow: -6px 5px 46px 7px rgba(0,86,179,0.76);
+        -moz-box-shadow: -6px 5px 46px 7px rgba(0,86,179,0.76);
     }
 }
